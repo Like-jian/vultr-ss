@@ -15,5 +15,5 @@ firewall-cmd --list-all
 
 echo '# /bin/bash
 ssserver -c /etc/shadowsocks.json -d start' > /etc/rc.d/init.d/shadowsocks
-ls -s /etc/rc.d/init.d/shadowsocks /etc/rc.d/rc3.d/S60shadowsocks
+ln -s /etc/rc.d/init.d/shadowsocks /etc/rc.d/rc3.d/S60shadowsocks
 echo 'shadowscocks加入开机自启'
