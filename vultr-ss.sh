@@ -1,6 +1,7 @@
 yum -y install epel-release
 yum -y install vim
 yum -y install python-pip
+yum -y install ntpdate
 pip install shadowsocks
 echo ' { 
     "server_port":2018,
