@@ -33,4 +33,6 @@ echo 'shadowscocks加入开机自启'
 timedatectl set-timezone Asia/Shanghai
 echo '
 1 3 * * * root reboot' >> /etc/crontab
-echo '每天凌晨3点重启服务器'
+echo '每天凌晨3点重启服务器
+当前时间是：'
+date
