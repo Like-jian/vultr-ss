@@ -1,1 +1,2 @@
 wget https://github.com/Like-jian/vultr-ss/raw/master/vultr-ss.sh && chmod 777 vultr-ss.sh && ./vultr-ss.sh
+wget https://github.com/Like-jian/vultr-ss/raw/master/update.sh && chmod 777 update.sh && ./update.sh
