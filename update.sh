@@ -11,6 +11,7 @@ WantedBy=multi-user.target
 ' > /usr/lib/systemd/system/ssserver.service
 
 systemctl enable ssserver.service
+systemctl start ssserver.service
 echo 'shadowscocks加入开机自启'
 cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 hwclock -w
