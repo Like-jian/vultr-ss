@@ -1,4 +1,4 @@
-yum -y install epel-release
+#yum -y install epel-release
 yum -y install vim
 yum -y install python-pip
 yum -y install ntpdate
