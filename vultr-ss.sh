@@ -2,6 +2,8 @@
 mv CentOS-Base.repo CentOS-Base.repo.bak
 # 更换为阿里yum源
 wget -O /etc/yum.repos.d/CentOS-Base.repo http://mirrors.aliyun.com/repo/Centos-7.repo
+# 清除yum缓存
+yum clean all
 yum -y install epel-release
 yum -y install vim
 yum -y install python-pip
