@@ -1,4 +1,8 @@
-#yum -y install epel-release
+# 备份原yum源
+mv CentOS-Base.repo CentOS-Base.repo.bak
+# 更换为阿里yum源
+wget -O /etc/yum.repos.d/CentOS-Base.repo http://mirrors.aliyun.com/repo/Centos-7.repo
+yum -y install epel-release
 yum -y install vim
 yum -y install python-pip
 yum -y install ntpdate
@@ -13,6 +17,8 @@ ssserver -c /etc/shadowsocks.json -d start
 firewall-cmd --zone=public --add-port=30001/tcp --permanent
 firewall-cmd --reload
 firewall-cmd --list-all
+# 防火墙开放指定端口 防止没有firewall-cmd命令
+iptables -A INPUT -p tcp --dport 30001 -j ACCEPT
 
 
 echo '[Unit]
@@ -32,6 +38,7 @@ WantedBy=multi-user.target
 systemctl enable ssserver.service
 echo 'shadowscocks加入开机自启'
 cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+# 显示当前时间
 hwclock -w
 timedatectl set-timezone Asia/Shanghai
 echo '
