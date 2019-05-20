@@ -1,6 +1,6 @@
 # 备份原yum源
 mv CentOS-Base.repo CentOS-Base.repo.bak
-#mv epel.repo epel.repo.bak
+mv epel.repo epel.repo.bak
 echo '[epel]
 name=Extra Packages for Enterprise Linux 7 - $basearch
 baseurl=http://download.fedoraproject.org/pub/epel/7/$basearch
