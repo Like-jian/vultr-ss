@@ -1,7 +1,7 @@
 # 备份原yum源
 mv CentOS-Base.repo CentOS-Base.repo.bak
-# 更换为阿里yum源
-wget -O /etc/yum.repos.d/CentOS-Base.repo http://mirrors.aliyun.com/repo/Centos-7.repo
+# 更换为网易yum源
+wget -O /etc/yum.repos.d/CentOS-Base.repo  http://mirrors.163.com/.help/CentOS7-Base-163.repo
 # 清除yum缓存
 yum clean all
 yum -y install epel-release
