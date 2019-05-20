@@ -26,11 +26,9 @@ baseurl=http://download.fedoraproject.org/pub/epel/7/SRPMS
 failovermethod=priority
 enabled=0
 gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-EPEL-7
-gpgcheck=1
-~
-' > /etc/yum.repos.d/epel.repo
+gpgcheck=1' > /etc/yum.repos.d/epel.repo
 # 更换为网易yum源
-wget -O /etc/yum.repos.d/CentOS-Base.repo  http://mirrors.163.com/.help/CentOS7-Base-163.repo
+wget -O /etc/yum.repos.d/CentOS-Base.repo http://mirrors.aliyun.com/repo/Centos-5.repo
 # 清除yum缓存
 yum clean all
 yum -y install epel-release
