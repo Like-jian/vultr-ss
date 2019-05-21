@@ -58,8 +58,7 @@ name=CentOS-$releasever - Plus - 163.com
 baseurl=http://mirrors.163.com/centos/$releasever/centosplus/$basearch/
 gpgcheck=1
 enabled=0
-gpgkey=http://mirrors.163.com/centos/RPM-GPG-KEY-CentOS-7
-' > /etc/yum.repos.d/CentOS-Base.repo 
+gpgkey=http://mirrors.163.com/centos/RPM-GPG-KEY-CentOS-7' > /etc/yum.repos.d/CentOS-Base.repo 
 wget -O /etc/pki/rpm-gpg/RPM-GPG-KEY-EPEL-7 https://archive.fedoraproject.org/pub/epel/RPM-GPG-KEY-EPEL-7
 
 # 清除yum缓存
