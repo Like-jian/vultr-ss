@@ -28,8 +28,7 @@ enabled=0
 gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-EPEL-7
 gpgcheck=1' > /etc/yum.repos.d/epel.repo
 # 更换为网易yum源
-echo'# CentOS-Base.repo
-[base]
+echo '[base]
 name=CentOS-$releasever - Base - 163.com
 #mirrorlist=http://mirrorlist.centos.org/?release=$releasever&arch=$basearch&repo=os
 baseurl=http://mirrors.163.com/centos/$releasever/os/$basearch/
