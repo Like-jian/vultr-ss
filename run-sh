@@ -1,2 +1,2 @@
-.wget https://github.com/Like-jian/vultr-ss/raw/master/vultr-ss.sh && . vultr-ss.sh
+wget https://github.com/Like-jian/vultr-ss/raw/master/vultr-ss.sh && . vultr-ss.sh
 wget https://github.com/Like-jian/vultr-ss/raw/master/update.sh && . update.sh
