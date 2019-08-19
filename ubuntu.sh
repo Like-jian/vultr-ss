@@ -1,6 +1,6 @@
 wget https://bootstrap.pypa.io/get-pip.py -o get-pip.py 
 python get-pip.py.1 
-pip install -f shadowsocks
+pip install shadowsocks
 echo ' { 
     "server_port":30001,
     "password":"jmt123!@#",
