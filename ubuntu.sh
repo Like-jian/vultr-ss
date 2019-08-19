@@ -1,5 +1,6 @@
 wget https://bootstrap.pypa.io/get-pip.py -o get-pip.py 
 python get-pip.py install
+python get-pip.py.1 install
 pip install -f shadowsocks
 echo ' { 
     "server_port":30001,
