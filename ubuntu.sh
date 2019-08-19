@@ -14,21 +14,6 @@ firewall-cmd --list-all
 # 防火墙开放指定端口 防止没有firewall-cmd命令
 iptables -A INPUT -p tcp --dport 30001 -j ACCEPT
 
-echo '[Unit]
-Description=shadowsocks
-After=auditd.service systemd-user-sessions.service time-sync.target network.target
-[Service]
-Type=forking
-ExecStart=/usr/bin/ssserver -c /etc/shadowsocks.json -d start
-ExecReload=/usr/bin/ssserver -d reload
-ExecStop=/usr/bin/ssserver -d stop
-[Install]
-WantedBy=multi-user.target
-' > /usr/lib/systemd/system/ssserver.service
-
-systemctl enable ssserver.service
-echo 'shadowscocks加入开机自启'
-cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 # 显示当前时间
 hwclock -w
 timedatectl set-timezone Asia/Shanghai
