@@ -12,7 +12,7 @@ firewall-cmd --zone=public --add-port=30001/tcp --permanent
 firewall-cmd --reload
 firewall-cmd --list-all
 # 防火墙开放指定端口 防止没有firewall-cmd命令
-iptables -A INPUT -p tcp --dport 30001 -j ACCEPT
+iptables -A INPUT -p tcp --dport 88 -j ACCEPT
 
 # 显示当前时间
 hwclock -w
