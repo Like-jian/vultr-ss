@@ -18,5 +18,5 @@ iptables -A INPUT -p tcp --dport 30001 -j ACCEPT
 hwclock -w
 timedatectl set-timezone Asia/Shanghai
 
-当前时间是：'
+echo '当前时间是：'
 date
