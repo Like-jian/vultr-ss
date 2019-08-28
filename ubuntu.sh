@@ -8,7 +8,7 @@ echo ' {
     "method":"aes-256-cfb"
 }' > /etc/shadowsocks.json
 ssserver -c /etc/shadowsocks.json -d start
-firewall-cmd --zone=public --add-port=30001/tcp --permanent
+firewall-cmd --zone=public --add-port=88/tcp --permanent
 firewall-cmd --reload
 firewall-cmd --list-all
 # 防火墙开放指定端口 防止没有firewall-cmd命令
