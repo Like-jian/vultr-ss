@@ -3,4 +3,4 @@ wget https://github.com/Like-jian/vultr-ss/raw/master/update.sh && . update.sh
 wget https://github.com/Like-jian/vultr-ss/raw/master/gudao-ss.sh && . gudao-ss.sh
 wget https://github.com/Like-jian/vultr-ss/raw/master/ubuntu.sh && . ubuntu.sh
 
-wget https://github.com/Like-jian/vultr-ss/raw/master/ubuntu.sh && . 30001ubuntu.sh
+wget https://github.com/Like-jian/vultr-ss/raw/master/30001ubuntu.sh && . 30001ubuntu.sh
