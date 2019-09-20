@@ -3,12 +3,12 @@ wget https://install.direct/go.sh
 echo '{
   "inbounds": [
     {
-      "port": 3001, // 服务器监听端口
-      "protocol": "vmess",    // 主传入协议
+      "port": 3001, 
+      "protocol": "vmess",    
       "settings": {
         "clients": [
           {
-            "id": "b831381d-6324-4d53-ad4f-8cda48b30811",  // 用户 ID，客户端与服务器必须相同
+            "id": "b831381d-6324-4d53-ad4f-8cda48b30811",  
             "alterId": 64
           }
         ]
@@ -17,7 +17,7 @@ echo '{
   ],
   "outbounds": [
     {
-      "protocol": "freedom",  // 主传出协议
+      "protocol": "freedom", 
       "settings": {}
     }
   ]
