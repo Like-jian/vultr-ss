@@ -28,7 +28,7 @@ echo '{
   ]
 }
 
-'  > /etc/v2ray/config.json
+'  > /usr/local/etc/v2ray/05_inbounds.json
 systemctl start v2ray 
 systemctl stop v2ray 
 systemctl start v2ray 
