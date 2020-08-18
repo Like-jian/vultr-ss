@@ -4,6 +4,7 @@
 # yum install curl
 wget https://raw.githubusercontent.com/v2fly/fhs-install-v2ray/master/install-release.sh
 echo -e "y\n" | . install-release.sh
+mkdir /etc/v2ray
 echo '{
   "inbounds": [
     {
