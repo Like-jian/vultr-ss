@@ -1,5 +1,9 @@
-wget https://install.direct/go.sh 
-. go.sh 
+#wget https://install.direct/go.sh 
+# #. go.sh 
+# yum makecache
+# yum install curl
+wget https://raw.githubusercontent.com/v2fly/fhs-install-v2ray/master/install-release.sh
+. install-release.sh
 echo '{
   "inbounds": [
     {
